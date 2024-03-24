@@ -8,7 +8,7 @@
 
 void setup()
 {
-    serialPtr->begin(115200);
+    serial.begin(115200);
 
     // The board peripheral power control pin needs to be set to HIGH when using the peripheral
     pinMode(BOARD_POWERON, OUTPUT);
@@ -17,7 +17,7 @@ void setup()
     init_tft();
     init_keyboard();
 
-    serialPtr->println("µVT Serial Logger");
+    serial.println("µVT Serial Logger");
 }
 
 void loop()

@@ -3,6 +3,6 @@
 
 #include <Arduino.h>
 
-extern HWCDC* serialPtr;
+extern HWCDC serial;
 
 #endif

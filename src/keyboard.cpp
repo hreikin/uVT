@@ -12,7 +12,7 @@ void init_keyboard()
     {
         while (1)
         {
-            serialPtr->println("LILYGO Keyboad not online .");
+            serial.println("LILYGO Keyboad not online .");
             delay(1000);
         }
     }

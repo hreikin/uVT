@@ -2,4 +2,4 @@
 
 #include "logging.hpp"
 
-HWCDC* serialPtr = &Serial;
+HWCDC serial = Serial;
