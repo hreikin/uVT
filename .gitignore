@@ -1,6 +1,8 @@
 # Folders
-.vscode/
 build/
+
+# C++ properties file (auto-generated)
+c_cpp_properties.json
 
 # Prerequisites
 *.d
