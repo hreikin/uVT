@@ -1,3 +1,9 @@
 [submodule "libraries/TFT_eSPI"]
 	path = libraries/TFT_eSPI
 	url = https://github.com/hreikin/TFT_eSPI.git
+[submodule "libraries/cansid"]
+	path = libraries/cansid
+	url = https://github.com/hreikin/VT100
+[submodule "libraries/VT100"]
+	path = libraries/VT100
+	url = https://github.com/hreikin/VT100
