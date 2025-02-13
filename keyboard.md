@@ -1,8 +1,27 @@
 # Keyboard
 
-Press `<alt+c>` to cycle through the below tables and then choose the relevant key. The default characters provided by the keyboard will be used once an alternate character has been selected.
+## Overview
 
-## Alternate Character Set
+This keyboard implementation provides various functionalities including:
+
+- Default character input
+- Alternative character tables
+- Control character input
+- Toggle mechanisms for ALT and CTRL modes
+
+## Usage Instructions
+
+### Default Character Input
+
+Press any key to input the default character associated with that key.
+
+### Alternative Character Tables
+
+Press `<alt+c>` to cycle through the alternative character tables. At present there are 3 alternative character tables. The `shift` and `sym` keys can be used to access the additional characters in each table.
+
+After selecting an alternative character table, press the relevant key to input the alternative character. Once a key has been pressed, the keyboard will revert to the default character table.
+
+While in any alternative character table mode, press `<shift+mic>` or `<shift+$>` to lock or unlock the current character table. When locked, the selected character table will remain active until explicitly unlocked.
 
 | Key       | Normal                                           | Shift                 | Symbol                         |
 |-----------|--------------------------------------------------|-----------------------|--------------------------------|
@@ -99,3 +118,42 @@ Press `<alt+c>` to cycle through the below tables and then choose the relevant k
 | $         | `═` (Box Double Horizontal)            | n/a   | n/a                                         |
 | \<mic\>   | n/a                                    | n/a   |                                             |
 | \<space\> |                                        | n/a   | n/a                                         |
+
+### Supported Control Character Codes
+
+Press `<shift+mic>` to toggle CTRL mode. In this mode, pressing a key will input the corresponding control character. The table below lists the supported control codes.
+
+| Key       | Control Code |
+|-----------|--------------|
+| q         | `CTRL+Q`     |
+| w         | `CTRL+W`     |
+| e         | `CTRL+E`     |
+| r         | `CTRL+R`     |
+| t         | `CTRL+T`     |
+| y         | `CTRL+Y`     |
+| u         | `CTRL+U`     |
+| i         | `CTRL+I`     |
+| o         | `CTRL+O`     |
+| p         | `CTRL+P`     |
+| a         | `CTRL+A`     |
+| s         | `CTRL+S`     |
+| d         | `CTRL+D`     |
+| f         | `CTRL+F`     |
+| g         | `CTRL+G`     |
+| h         | `CTRL+H`     |
+| j         | `CTRL+J`     |
+| k         | `CTRL+K`     |
+| l         | `CTRL+L`     |
+| z         | `CTRL+Z`     |
+| x         | `CTRL+X`     |
+| c         | `CTRL+C`     |
+| v         | `CTRL+V`     |
+| b         | `CTRL+B`     |
+| n         | `CTRL+N`     |
+| m         | `CTRL+M`     |
+| $         | `CTRL+$`     |
+| \<space\> | `CTRL+Space` |
+
+### ALT Mode
+
+Press `<shift+$>` to toggle ALT mode. In this mode, you can input characters by typing their numeric codes followed by `<Enter>`. For example, to input the character `A` (code 65), press `6`, `5`, and then `<Enter>`. Please note that not all characters are available, only the ones provided by the font `CP437`.
